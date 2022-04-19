@@ -5,6 +5,7 @@ from django.db import models
 class Book(models.Model):
     book = models.CharField(max_length=250)
     title = models.CharField(max_length=250)
+    subtitle = models.CharField(max_length=250)
     author = models.CharField(max_length=100)
     isbn = models.CharField(max_length=13)
 
